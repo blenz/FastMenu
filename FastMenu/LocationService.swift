@@ -12,7 +12,7 @@ protocol LocationServiceDelegate: AnyObject {
     func didFailWithError(error: Error)
 }
 
-class LocationService: NSObject, CLLocationManagerDelegate {
+class LocationService: NSObject {
     private var locationManager: CLLocationManager
 
     weak var delegate: LocationServiceDelegate?
@@ -20,6 +20,7 @@ class LocationService: NSObject, CLLocationManagerDelegate {
     override init() {
         locationManager = CLLocationManager()
         super.init()
+
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
@@ -34,9 +35,9 @@ class LocationService: NSObject, CLLocationManagerDelegate {
     func stopUpdatingLocation() {
         locationManager.stopUpdatingLocation()
     }
+}
 
-    // MARK: - CLLocationManagerDelegate
-
+extension LocationService: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let coord = locations.last?.coordinate {
             delegate?.didUpdateLocation(latitude: coord.latitude, longitude: coord.longitude)

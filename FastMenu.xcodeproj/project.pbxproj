@@ -15,6 +15,7 @@
 		675DAAA42BC10971008BC5C3 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 675DAAA32BC10971008BC5C3 /* URLImage */; };
 		675DAAA62BC10971008BC5C3 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = 675DAAA52BC10971008BC5C3 /* URLImageStore */; };
 		675DAAA82BC10C03008BC5C3 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675DAAA72BC10C03008BC5C3 /* MenuViewModel.swift */; };
+		678524222BC7836700706B7E /* YelpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678524212BC7836700706B7E /* YelpService.swift */; };
 		67C099392BC5F58A00888450 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C099382BC5F58A00888450 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		675DAA992BC0FEDF008BC5C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		675DAAA02BC0FF5B008BC5C3 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		675DAAA72BC10C03008BC5C3 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		678524212BC7836700706B7E /* YelpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpService.swift; sourceTree = "<group>"; };
 		67C099382BC5F58A00888450 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		67C0993A2BC6328B00888450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 				675DAAA72BC10C03008BC5C3 /* MenuViewModel.swift */,
 				67C099382BC5F58A00888450 /* LocationService.swift */,
 				675DAA942BC0FEDF008BC5C3 /* MenuView.swift */,
+				678524212BC7836700706B7E /* YelpService.swift */,
 				675DAA962BC0FEDF008BC5C3 /* Assets.xcassets */,
 				675DAA982BC0FEDF008BC5C3 /* Preview Content */,
 			);
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				678524222BC7836700706B7E /* YelpService.swift in Sources */,
 				675DAAA12BC0FF5B008BC5C3 /* MenuItem.swift in Sources */,
 				675DAA952BC0FEDF008BC5C3 /* MenuView.swift in Sources */,
 				67C099392BC5F58A00888450 /* LocationService.swift in Sources */,
@@ -301,7 +305,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FastMenu/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = test;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This is test";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -334,7 +338,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FastMenu/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = test;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This is test";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

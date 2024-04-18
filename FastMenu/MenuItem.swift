@@ -8,5 +8,6 @@
 import Foundation
 
 struct MenuItem {
-    let url: URL
+    let businessName: String
+    let imageURL: URL
 }
